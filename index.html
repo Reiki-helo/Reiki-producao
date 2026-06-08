@@ -264,7 +264,7 @@
     </div>
   </div>
 
-  <footer>Dados: Registros de Reunião — Notion · Reiki Indústria · Gerado em 02/06/2026</footer>
+  <footer>Dados: Registros de Reunião — Notion · Reiki Indústria · Gerado em 08/06/2026</footer>
 </div>
 
 <script>
@@ -293,26 +293,29 @@ function checkPassword(){
 //  Período: 05/05/2026 → 01/06/2026
 // ══════════════════════════════════════════════
 const RAW = [
-  { data:'05/05/2026', fin:16, fat:4,  s1:18, s2:14, marc:25, est:26, embt:20, embpv:20, almox:24, col:0,   p1:15, p2:17, p3:null, p4:24,   p5:22,   retText:'Serra 1, risco no perfil U, 200mm | Estampo - amassou perfil U - 100mm | Marcação - fez errado perfil trilho - 690mm | Serra 1 - corte errado do trilho e U 2x - 480mm' },
-  { data:'06/05/2026', fin:9,  fat:0,  s1:14, s2:0,  marc:14, est:14, embt:18, embpv:14, almox:2,  col:0,   p1:15, p2:17, p3:23,   p4:20,   p5:18,   retText:'Estampo: 2 erros | Marcação: u com aba riscado | Pintura: u com falha na pintura' },
-  { data:'07/05/2026', fin:2,  fat:1,  s1:11, s2:0,  marc:12, est:15, embt:15, embpv:0,  almox:0,  col:0,   p1:null,p2:13,  p3:null, p4:21,   p5:null, retText:'0' },
-  { data:'08/05/2026', fin:0,  fat:36, s1:20, s2:0,  marc:15, est:7,  embt:11, embpv:2,  almox:0,  col:18,  p1:null,p2:null,p3:null, p4:null, p5:null, retText:'0' },
-  { data:'11/05/2026', fin:3,  fat:0,  s1:25, s2:22, marc:25, est:20, embt:20, embpv:14, almox:0,  col:0,   p1:18,  p2:null,p3:null, p4:null, p5:23,   retText:'Serra 2: trilho invertido no estaleiro | PV PPA falha na pintura' },
-  { data:'12/05/2026', fin:18, fat:24, s1:19, s2:22, marc:25, est:20, embt:20, embpv:17, almox:19, col:0,   p1:17,  p2:null,p3:null, p4:null, p5:null, retText:'Pintura: falha pintura PV | Serra 1: corte invertido | Marcação: dreno errado | Estampo: risco em 2 peças' },
-  { data:'13/05/2026', fin:26, fat:0,  s1:18, s2:29, marc:21, est:9,  embt:19, embpv:20, almox:30, col:0,   p1:14,  p2:15,  p3:null, p4:24,   p5:null, retText:'Qualidade: vidro enviado quebrado/lascado' },
-  { data:'14/05/2026', fin:29, fat:0,  s1:5,  s2:10, marc:6,  est:12, embt:17, embpv:19, almox:30, col:0,   p1:17,  p2:21,  p3:null, p4:null, p5:null, retText:'Marcação: abertura errada trilho | Serra 1: erro de reaproveitamento | Pintura: PV | Estoque: PV amassado' },
-  { data:'15/05/2026', fin:18, fat:32, s1:11, s2:18, marc:7,  est:5,  embt:4,  embpv:9,  almox:15, col:0,   p1:14,  p2:18,  p3:43,   p4:20,   p5:24,   retText:'Marcação: abertura errada trilho 1118mm' },
-  { data:'18/05/2026', fin:4,  fat:13, s1:27, s2:1,  marc:17, est:15, embt:15, embpv:12, almox:1,  col:0,   p1:15,  p2:null,p3:null, p4:null, p5:null, retText:'Serra 1: cortado cor errada | Pintura: falha PV | PV riscado' },
-  { data:'19/05/2026', fin:8,  fat:5,  s1:25, s2:22, marc:30, est:23, embt:23, embpv:2,  almox:15, col:0,   p1:14,  p2:18,  p3:null, p4:34,   p5:null, retText:'0' },
-  { data:'20/05/2026', fin:22, fat:32, s1:30, s2:30, marc:27, est:22, embt:19, embpv:16, almox:25, col:19,  p1:13,  p2:20,  p3:null, p4:13,   p5:20,   retText:'Pintura: falha extrusão PV | Serra 2: trilho glazing cortado menor' },
-  { data:'21/05/2026', fin:32, fat:11, s1:36, s2:38, marc:30, est:24, embt:26, embpv:18, almox:26, col:0,   p1:13,  p2:16,  p3:35,   p4:null, p5:null, retText:'Pintura: desplacou tinta trilho | Serra 2: PV riscado' },
-  { data:'22/05/2026', fin:23, fat:0,  s1:10, s2:27, marc:18, est:35, embt:26, embpv:28, almox:22, col:0,   p1:13,  p2:21,  p3:null, p4:null, p5:22,   retText:'0' },
-  { data:'25/05/2026', fin:14, fat:12, s1:1,  s2:21, marc:1,  est:3,  embt:14, embpv:14, almox:19, col:41,  p1:10,  p2:null,p3:null, p4:null, p5:23,   retText:'0' },
-  { data:'26/05/2026', fin:19, fat:17, s1:1,  s2:3,  marc:1,  est:1,  embt:2,  embpv:38, almox:7,  col:142, p1:11,  p2:null,p3:29,   p4:null, p5:26,   retText:'Retrabalhos: 0' },
-  { data:'27/05/2026', fin:20, fat:11, s1:3,  s2:0,  marc:2,  est:0,  embt:0,  embpv:0,  almox:24, col:130, p1:16,  p2:11,  p3:null, p4:null, p5:27,   retText:'0' },
-  { data:'28/05/2026', fin:23, fat:21, s1:17, s2:16, marc:17, est:17, embt:16, embpv:null,almox:30, col:null,p1:13,  p2:14,  p3:null, p4:null, p5:28,   retText:'Marcação - trilho riscado - 832mm' },
-  { data:'29/05/2026', fin:12, fat:14, s1:null,s2:null,marc:null,est:null,embt:null,embpv:null,almox:null,col:null,p1:12,p2:null,p3:null,p4:null,p5:28,retText:'Estampo: U riscado - 1680+385 | Serra 2: PV riscado - 499mm | Extrusora: falha no PV - 405mm' },
-  { data:'01/06/2026', fin:12, fat:12, s1:null,s2:null,marc:null,est:1, embt:1,  embpv:8,  almox:10, col:null,p1:14,p2:19,p3:38,p4:19,p5:null,retText:'0' },
+  { data:'05/05/2026', fin:16, fat:4,  s1:18, s2:14, marc:25, est:26, embt:20, embpv:20, almox:24, col:0,   p1:15,   p2:17,   p3:null, p4:24,   p5:22,   retText:'Serra 1, risco no perfil U, 200mm | Estampo - amassou perfil U - 100mm | Marcação - fez errado perfil trilho - 690mm | Serra 1 - corte errado do trilho e U 2x - 480mm' },
+  { data:'06/05/2026', fin:9,  fat:0,  s1:14, s2:0,  marc:14, est:14, embt:18, embpv:14, almox:2,  col:0,   p1:15,   p2:17,   p3:23,   p4:20,   p5:18,   retText:'Estampo: 2 erros | Marcação: u com aba riscado | Pintura: u com falha na pintura' },
+  { data:'07/05/2026', fin:2,  fat:1,  s1:11, s2:0,  marc:12, est:15, embt:15, embpv:0,  almox:0,  col:0,   p1:null, p2:13,   p3:null, p4:21,   p5:null, retText:'0' },
+  { data:'08/05/2026', fin:0,  fat:36, s1:20, s2:0,  marc:15, est:7,  embt:11, embpv:2,  almox:0,  col:18,  p1:null, p2:null, p3:null, p4:null, p5:null, retText:'0' },
+  { data:'11/05/2026', fin:3,  fat:0,  s1:25, s2:22, marc:25, est:20, embt:20, embpv:14, almox:0,  col:0,   p1:18,   p2:null, p3:null, p4:null, p5:23,   retText:'Serra 2: trilho invertido no estaleiro | PV PPA falha na pintura' },
+  { data:'12/05/2026', fin:18, fat:24, s1:19, s2:22, marc:25, est:20, embt:20, embpv:17, almox:19, col:0,   p1:17,   p2:null, p3:null, p4:null, p5:null, retText:'Pintura: falha pintura PV | Serra 1: corte invertido | Marcação: dreno errado | Estampo: risco em 2 peças' },
+  { data:'13/05/2026', fin:26, fat:0,  s1:18, s2:29, marc:21, est:9,  embt:19, embpv:20, almox:30, col:0,   p1:14,   p2:15,   p3:null, p4:24,   p5:null, retText:'Qualidade: vidro enviado quebrado/lascado' },
+  { data:'14/05/2026', fin:29, fat:0,  s1:5,  s2:10, marc:6,  est:12, embt:17, embpv:19, almox:30, col:0,   p1:17,   p2:21,   p3:null, p4:null, p5:null, retText:'Marcação: abertura errada trilho | Serra 1: erro de reaproveitamento | Pintura: PV | Estoque: PV amassado' },
+  { data:'15/05/2026', fin:18, fat:32, s1:11, s2:18, marc:7,  est:5,  embt:4,  embpv:9,  almox:15, col:0,   p1:14,   p2:18,   p3:43,   p4:20,   p5:24,   retText:'Marcação: abertura errada trilho 1118mm' },
+  { data:'18/05/2026', fin:4,  fat:13, s1:27, s2:1,  marc:17, est:15, embt:15, embpv:12, almox:1,  col:0,   p1:15,   p2:null, p3:null, p4:null, p5:null, retText:'Serra 1: cortado cor errada | Pintura: falha PV | PV riscado' },
+  { data:'19/05/2026', fin:8,  fat:5,  s1:25, s2:22, marc:30, est:23, embt:23, embpv:2,  almox:15, col:0,   p1:14,   p2:18,   p3:null, p4:34,   p5:null, retText:'0' },
+  { data:'20/05/2026', fin:22, fat:32, s1:30, s2:30, marc:27, est:22, embt:19, embpv:16, almox:25, col:19,  p1:13,   p2:20,   p3:null, p4:13,   p5:20,   retText:'Pintura: falha extrusão PV | Serra 2: trilho glazing cortado menor' },
+  { data:'21/05/2026', fin:32, fat:11, s1:36, s2:38, marc:30, est:24, embt:26, embpv:18, almox:26, col:0,   p1:13,   p2:16,   p3:35,   p4:null, p5:null, retText:'Pintura: desplacou tinta trilho | Serra 2: PV riscado' },
+  { data:'22/05/2026', fin:23, fat:0,  s1:10, s2:27, marc:18, est:35, embt:26, embpv:28, almox:22, col:0,   p1:13,   p2:21,   p3:null, p4:null, p5:22,   retText:'0' },
+  { data:'25/05/2026', fin:14, fat:12, s1:1,  s2:21, marc:1,  est:3,  embt:14, embpv:14, almox:19, col:41,  p1:10,   p2:null, p3:null, p4:null, p5:23,   retText:'0' },
+  { data:'26/05/2026', fin:19, fat:17, s1:1,  s2:3,  marc:1,  est:1,  embt:2,  embpv:38, almox:7,  col:142, p1:11,   p2:null, p3:29,   p4:null, p5:26,   retText:'0' },
+  { data:'27/05/2026', fin:20, fat:11, s1:3,  s2:0,  marc:2,  est:null,embt:null,embpv:null,almox:24,col:130,p1:16,  p2:11,   p3:null, p4:null, p5:27,   retText:'0' },
+  { data:'28/05/2026', fin:23, fat:21, s1:17, s2:16, marc:17, est:17, embt:16, embpv:null,almox:30, col:null,p1:13,   p2:14,   p3:null, p4:null, p5:28,   retText:'Marcação: trilho riscado - 832mm' },
+  { data:'29/05/2026', fin:12, fat:14, s1:null,s2:null,marc:null,est:null,embt:null,embpv:null,almox:null,col:null,p1:12,p2:null,p3:null,p4:null,p5:28, retText:'Estampo: U riscado | Serra 2: PV riscado - 499mm | Extrusora: falha no PV - 405mm' },
+  { data:'01/06/2026', fin:12, fat:12, s1:0,  s2:0,  marc:0,  est:1,  embt:1,  embpv:8,  almox:10, col:null,p1:14,   p2:19,   p3:38,   p4:19,   p5:null, retText:'0' },
+  { data:'02/06/2026', fin:21, fat:0,  s1:8,  s2:2,  marc:8,  est:8,  embt:8,  embpv:null,almox:22, col:8,   p1:14,   p2:17,   p3:17,   p4:null, p5:23,   retText:'Estoque: trilho com risco - 1100mm | Pintura: trilho com falha - 838mm' },
+  { data:'03/06/2026', fin:null,fat:null,s1:null,s2:null,marc:null,est:null,embt:null,embpv:null,almox:null,col:null,p1:null,p2:null,p3:null,p4:null,p5:null, retText:'Erro formalização de peças - comercial' },
+  { data:'08/06/2026', fin:0,  fat:34, s1:16, s2:26, marc:11, est:9,  embt:0,  embpv:0,  almox:0,  col:0,   p1:null, p2:null, p3:null, p4:null, p5:null, retText:'Embalagem: risco na peça do quadro - 1029mm | Usinagem: errada a usinagem quadro - 1177mm' },
 ];
 
 function computeRetrabalhos(rawData){
